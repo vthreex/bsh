@@ -26,6 +26,7 @@ me
 ## license
 
 MIT 
--# because MIT is goated and using anything else is stupid
+*because MIT is goated and using anything else is stupid*
 
 gonna remove some immature comments later, maybe!
+i did mostly
