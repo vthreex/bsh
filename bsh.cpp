@@ -2,11 +2,10 @@
 #include <unistd.h>   
 #include <sys/types.h> 
 #include <sys/wait.h>  
-#define penis fork
 #include <sstream>
 #include <vector>
 std::string userinput;
-std::string penis2; 
+std::string talkingtom; // words
 
 // this is so confusing
 
@@ -21,27 +20,26 @@ int main() {
                 if (userinput == "exit") {
                     break;
                 }
-                std::istringstream puh(userinput);
-                std::vector<std::string> cum; 
-                std::vector<char*> penis3;
-                        while (puh >> penis2) {
-    cum.push_back(penis2);
+                std::istringstream cacaomug(userinput); // stands for istream but i corellated well wahtever
+                std::vector<std::string> pluraltalkingtom; // which means word(s)
+                std::vector<char*> storag;
+                        while (cacaomug >> talkingtom) {
+    pluraltalkingtom.push_back(talkingtom);
     }
 
     
 
-        for (auto& soup : cum) {
-            penis3.push_back((char*)soup.c_str());
+        for (auto& soup : pluraltalkingtom) {
+            storag.push_back((char*)soup.c_str());
             
-        } 
-        penis3.push_back(nullptr);
-            pid_t pid = penis();
-            char* arguments[] =  { (char*)userinput.c_str(), NULL }; // penis
+        }
+        storag.push_back(nullptr);
+            pid_t pid = fork();
             if (pid < 0) {
-                perror("penis");
+                perror("fork");
             }
             else if (pid == 0) {
-                execvp(penis3[0], penis3.data()); // WHY DOESNT IT FUKCING WORK
+                execvp(storag[0], storag.data()); // WHY DOESNT IT FUKCING WORK
                 perror("execvp"); // bro fucking "" strike again
                 exit(69); 
             }
