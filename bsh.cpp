@@ -22,7 +22,7 @@ int main() {
                     break;
                 }
                 std::istringstream puh(userinput);
-                std::vector<std::string> cum; // whoever designed cpp is like fucking netanyahu v2 why would you do this
+                std::vector<std::string> cum; 
                 std::vector<char*> penis3;
                         while (puh >> penis2) {
     cum.push_back(penis2);
@@ -33,7 +33,7 @@ int main() {
         for (auto& soup : cum) {
             penis3.push_back((char*)soup.c_str());
             
-        } // I CHANGED MY MIND NOT EVEN FUCKING NETANYAHU WOULD MAKE THIS SHIT
+        } 
         penis3.push_back(nullptr);
             pid_t pid = penis();
             char* arguments[] =  { (char*)userinput.c_str(), NULL }; // penis
